@@ -5,8 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
-endpoint = "https://ibmmart.services.ai.azure.com/openai/v1"
+endpoint = os.getenv("endpoint")
 deployment_name = "gpt-4.1-mini"
 api_key = os.getenv("api_key")
 
